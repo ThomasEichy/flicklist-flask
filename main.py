@@ -91,7 +91,7 @@ def add_movie():
 
     # TODO 
     # 'escape' the user's input so that if they typed HTML, it doesn't mess up our site
-    
+    new_movie = cgi.escape(request.form['new-movie'])
     # TODO 
     # if the user typed nothing at all, redirect and tell them the error
 
